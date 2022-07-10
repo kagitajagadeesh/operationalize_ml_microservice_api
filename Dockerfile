@@ -13,7 +13,7 @@ COPY ./requirements.txt /app/
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
-RUN pip install --upgrade pip &&\
+RUN pip install --upgrade pip==19.2.1 &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
 ## Step 4:
